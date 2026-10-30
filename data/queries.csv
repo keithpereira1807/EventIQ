@@ -1,0 +1,501 @@
+query_id,query
+Q0001,Public Services events near Surat
+Q0002,Banking events near Kolkata
+Q0003,Photography events in Hyderabad
+Q0004,free events in Kochi
+Q0005,Mental Wellness events for beginners
+Q0006,Food & Drink events in Nashik
+Q0007,technology events in Hyderabad
+Q0008,AI workshops in Bengaluru
+Q0009,Regional Cuisine events near Bhubaneswar
+Q0010,Personal Finance events near Lucknow
+Q0011,Health & Wellness events in Lucknow
+Q0012,Networking events for students
+Q0013,Finance events in Chandigarh
+Q0014,Career & Jobs events for professionals
+Q0015,Competitive Gaming events near Bhubaneswar
+Q0016,Cloud Computing events for beginners
+Q0017,Web Development events for beginners
+Q0018,Science events in Nashik
+Q0019,technology events in Nashik
+Q0020,Biology Concerts in Chennai
+Q0021,Baking workshops in Mumbai
+Q0022,Music events in Surat
+Q0023,AI workshops in Lucknow
+Q0024,Book Club workshops in Mumbai
+Q0025,Nutrition events near Kolkata
+Q0026,free events in Hyderabad
+Q0027,Food & Drink events in Kolkata
+Q0028,Networking Festivals in Kochi
+Q0029,Financial Planning Hackathons in Delhi
+Q0030,Venture Funding events for beginners
+Q0031,Environmental Science Seminars in Surat
+Q0032,Founder Networking events for students
+Q0033,free events in Kochi
+Q0034,Climate Action workshops in Kolkata
+Q0035,Music Production events near Surat
+Q0036,Business events for professionals
+Q0037,Community events in Indore
+Q0038,Regional Cuisine Workshops in Ahmedabad
+Q0039,Social Media events for students
+Q0040,Entrepreneurship events for students
+Q0041,Government & Civic events for professionals
+Q0042,Civic Engagement events for beginners
+Q0043,free events in Chennai
+Q0044,free events in Chandigarh
+Q0045,Brand Strategy events for students
+Q0046,Baking Bootcamps in Hyderabad
+Q0047,technology events in Coimbatore
+Q0048,AI workshops in Nashik
+Q0049,Gaming events in Kolkata
+Q0050,Finance events for professionals
+Q0051,Teaching events for students
+Q0052,free events in Delhi
+Q0053,FinTech events for students
+Q0054,Music Production events near Nashik
+Q0055,AI workshops in Coimbatore
+Q0056,Classical Music events near New Delhi
+Q0057,Physics workshops in Hyderabad
+Q0058,free events in Nashik
+Q0059,Food & Drink events in Surat
+Q0060,Food & Drink events in Ahmedabad
+Q0061,Finance events for professionals
+Q0062,Travel & Adventure events in Bhubaneswar
+Q0063,Data Science events near Surat
+Q0064,Education events in Mumbai
+Q0065,AI workshops in Pune
+Q0066,Finance events in Nagpur
+Q0067,Science events for professionals
+Q0068,free events in Lucknow
+Q0069,Content Marketing events for beginners
+Q0070,Space Science events for students
+Q0071,Advertising events near Jaipur
+Q0072,Portrait Photography events for beginners
+Q0073,Technology events for professionals
+Q0074,Digital Marketing events for students
+Q0075,Data Science workshops in Bengaluru
+Q0076,free events in Jaipur
+Q0077,Camping events for beginners
+Q0078,Cloud Computing workshops in Bhubaneswar
+Q0079,free events in Kochi
+Q0080,Author Talk events for beginners
+Q0081,AI workshops in Hyderabad
+Q0082,Financial Planning workshops in Ahmedabad
+Q0083,Baking workshops in Indore
+Q0084,Finance events for professionals
+Q0085,Professional Development events for beginners
+Q0086,Startups events for professionals
+Q0087,Financial Planning Conferences in Bhubaneswar
+Q0088,AI workshops in Pune
+Q0089,technology events in Nagpur
+Q0090,Networking events for students
+Q0091,Music Production events near Coimbatore
+Q0092,Advertising events near Delhi
+Q0093,Web Development Conferences in Nashik
+Q0094,Painting workshops in Hyderabad
+Q0095,Sports events in Surat
+Q0096,Coffee events for beginners
+Q0097,AI workshops in Lucknow
+Q0098,Community events for professionals
+Q0099,Business events in Lucknow
+Q0100,technology events in Nagpur
+Q0101,Literature events for professionals
+Q0102,Career & Jobs events in Nashik
+Q0103,technology events in Mumbai
+Q0104,Coffee workshops in Chennai
+Q0105,Public Policy Seminars in Bhubaneswar
+Q0106,Waste Management events for students
+Q0107,Interview Skills workshops in Lucknow
+Q0108,technology events in Nagpur
+Q0109,Creative Writing events near Jaipur
+Q0110,Renewable Energy events for students
+Q0111,free events in Nagpur
+Q0112,Social Impact events near Delhi
+Q0113,AI workshops in Nashik
+Q0114,Indie Music events near Ahmedabad
+Q0115,Machine Learning events near Chennai
+Q0116,Environment events for professionals
+Q0117,technology events in Chennai
+Q0118,Public Services events for beginners
+Q0119,free events in Mumbai
+Q0120,Photography events in Bengaluru
+Q0121,AI workshops in Mumbai
+Q0122,Higher Education events for beginners
+Q0123,free events in Ahmedabad
+Q0124,Wildlife Photography events for students
+Q0125,Finance events in Kochi
+Q0126,Volunteering events near Jaipur
+Q0127,Regional Cuisine events for students
+Q0128,Sustainability workshops in Pune
+Q0129,Government & Civic events in Lucknow
+Q0130,technology events in New Delhi
+Q0131,Folk Music Conferences in Indore
+Q0132,Creative Writing events for beginners
+Q0133,Networking events for beginners
+Q0134,free events in Chandigarh
+Q0135,Volunteering events for students
+Q0136,Coffee events for students
+Q0137,free events in Bhopal
+Q0138,Biology events for beginners
+Q0139,AI workshops in Mumbai
+Q0140,Board Games events near Nagpur
+Q0141,technology events in Pune
+Q0142,AI workshops in Kolkata
+Q0143,AI workshops in Delhi
+Q0144,Music Production events near Bhubaneswar
+Q0145,Career Fair events for beginners
+Q0146,Brand Strategy events near Mumbai
+Q0147,Blockchain Panel Discussions in Jaipur
+Q0148,Arts & Culture events in Kolkata
+Q0149,Volunteering workshops in Chandigarh
+Q0150,technology events in Hyderabad
+Q0151,technology events in Lucknow
+Q0152,Civic Awareness workshops in Pune
+Q0153,Baking Panel Discussions in Coimbatore
+Q0154,Coffee events for students
+Q0155,Higher Education events near Chennai
+Q0156,Blockchain events for beginners
+Q0157,Mobile Photography workshops in Chandigarh
+Q0158,Esports Concerts in Pune
+Q0159,Internships Competitions in Bhopal
+Q0160,AI workshops in New Delhi
+Q0161,AI workshops in Ahmedabad
+Q0162,technology events in Kolkata
+Q0163,Fitness events for students
+Q0164,Music events for professionals
+Q0165,free events in Pune
+Q0166,Chemistry Hackathons in Indore
+Q0167,Finance events for professionals
+Q0168,Waste Management Concerts in Surat
+Q0169,Entrepreneurship events for students
+Q0170,Civic Engagement events for beginners
+Q0171,Outdoor Adventure events for students
+Q0172,AI workshops in Bengaluru
+Q0173,Football Hackathons in Surat
+Q0174,AI workshops in Surat
+Q0175,Environment events in Nagpur
+Q0176,Competitive Gaming workshops in Bhubaneswar
+Q0177,Content Marketing Exhibitions in Jaipur
+Q0178,AI workshops in Bhopal
+Q0179,Fitness events near Indore
+Q0180,Sustainability events for beginners
+Q0181,Book Club Festivals in Nashik
+Q0182,Technology events in Mumbai
+Q0183,Science events for professionals
+Q0184,technology events in Bhubaneswar
+Q0185,Poetry workshops in Kolkata
+Q0186,Indie Music Panel Discussions in Bhubaneswar
+Q0187,Venture Funding events near Bhubaneswar
+Q0188,Content Marketing workshops in Kolkata
+Q0189,Personal Finance events near New Delhi
+Q0190,Public Policy events near Lucknow
+Q0191,technology events in Bhopal
+Q0192,Blockchain events for students
+Q0193,Community events in Bhubaneswar
+Q0194,Arts & Culture events for professionals
+Q0195,Product Development events near Mumbai
+Q0196,Physics workshops in Kolkata
+Q0197,Marketing events for professionals
+Q0198,AI workshops in Mumbai
+Q0199,technology events in Nashik
+Q0200,Photography Trips events for beginners
+Q0201,Renewable Energy events for beginners
+Q0202,Cooking events for students
+Q0203,Street Photography events for students
+Q0204,free events in Surat
+Q0205,free events in Indore
+Q0206,Career & Jobs events for professionals
+Q0207,technology events in Kochi
+Q0208,Social Media events near Surat
+Q0209,Literary Festival events near Kochi
+Q0210,technology events in Kochi
+Q0211,Literature events for professionals
+Q0212,AI workshops in Hyderabad
+Q0213,Academic Research events near Jaipur
+Q0214,Competitive Gaming events for students
+Q0215,Governance events near Bhopal
+Q0216,technology events in New Delhi
+Q0217,Artificial Intelligence events for beginners
+Q0218,Environmental Science workshops in Kochi
+Q0219,Health & Wellness events for professionals
+Q0220,Brand Strategy events near Chennai
+Q0221,Civic Engagement events near New Delhi
+Q0222,technology events in Kochi
+Q0223,Science events for professionals
+Q0224,AI workshops in Chennai
+Q0225,free events in Pune
+Q0226,AI workshops in Nagpur
+Q0227,technology events in Lucknow
+Q0228,Game Development Competitions in Jaipur
+Q0229,free events in Nashik
+Q0230,free events in Bhubaneswar
+Q0231,Professional Development events near Surat
+Q0232,technology events in Delhi
+Q0233,Music events for professionals
+Q0234,Teaching events near Hyderabad
+Q0235,Teaching workshops in Surat
+Q0236,Science events for professionals
+Q0237,Running events near Kolkata
+Q0238,technology events in Bengaluru
+Q0239,free events in Coimbatore
+Q0240,AI workshops in Bengaluru
+Q0241,AI workshops in Lucknow
+Q0242,Personal Finance workshops in Jaipur
+Q0243,AI workshops in Bhubaneswar
+Q0244,Internships workshops in Surat
+Q0245,Nutrition events near Kolkata
+Q0246,Education events for professionals
+Q0247,Fitness events near Lucknow
+Q0248,Live Music Competitions in Jaipur
+Q0249,Regional Cuisine events for beginners
+Q0250,Wildlife Photography workshops in Coimbatore
+Q0251,free events in Kochi
+Q0252,Arts & Culture events for professionals
+Q0253,Painting Trainings in Hyderabad
+Q0254,Book Club events for beginners
+Q0255,Badminton workshops in Surat
+Q0256,Author Talk events near Lucknow
+Q0257,Resume Building workshops in Kochi
+Q0258,technology events in Indore
+Q0259,free events in New Delhi
+Q0260,Venture Funding events for students
+Q0261,technology events in New Delhi
+Q0262,technology events in Hyderabad
+Q0263,Product Development events for students
+Q0264,Marketing events for professionals
+Q0265,Environment events for professionals
+Q0266,Science events for professionals
+Q0267,Founder Networking events near Indore
+Q0268,Poetry events near Bhopal
+Q0269,Literature events for professionals
+Q0270,Community events for professionals
+Q0271,Content Marketing events near Nagpur
+Q0272,Mental Wellness events near Lucknow
+Q0273,Conservation workshops in New Delhi
+Q0274,Biology workshops in Indore
+Q0275,technology events in Chennai
+Q0276,Waste Management workshops in Nagpur
+Q0277,Music events for professionals
+Q0278,Volunteering Tournaments in Surat
+Q0279,Cloud Computing events for students
+Q0280,Professional Development workshops in Nagpur
+Q0281,Chemistry events for students
+Q0282,Business Strategy events near Bengaluru
+Q0283,AI workshops in Ahmedabad
+Q0284,Community events for professionals
+Q0285,Photography Trips workshops in Lucknow
+Q0286,Content Marketing workshops in Ahmedabad
+Q0287,technology events in Bengaluru
+Q0288,Volunteering events for students
+Q0289,Urban Development events near Lucknow
+Q0290,Technology events for professionals
+Q0291,Cricket events for beginners
+Q0292,Advertising events for beginners
+Q0293,Science events in Coimbatore
+Q0294,technology events in Bhopal
+Q0295,Fitness events for beginners
+Q0296,technology events in Jaipur
+Q0297,Travel & Adventure events for professionals
+Q0298,Photography events in Coimbatore
+Q0299,technology events in Chandigarh
+Q0300,Yoga workshops in Coimbatore
+Q0301,Literature events in Bhopal
+Q0302,AI workshops in Pune
+Q0303,Marketing events for professionals
+Q0304,Sports events for professionals
+Q0305,Sports events for professionals
+Q0306,Business events for professionals
+Q0307,Climate Action Panel Discussions in Nagpur
+Q0308,Fitness events near Bhopal
+Q0309,Civic Awareness events near Lucknow
+Q0310,free events in Bengaluru
+Q0311,AI workshops in Ahmedabad
+Q0312,free events in Indore
+Q0313,Sports events in Chennai
+Q0314,Nutrition events for beginners
+Q0315,AI workshops in Ahmedabad
+Q0316,Youth Programs events for beginners
+Q0317,Higher Education workshops in Nashik
+Q0318,Social Media workshops in Kolkata
+Q0319,Social Media Bootcamps in Chennai
+Q0320,AI workshops in Jaipur
+Q0321,Finance events in Nashik
+Q0322,Content Marketing workshops in Lucknow
+Q0323,free events in Nashik
+Q0324,Internships Webinars in Nagpur
+Q0325,free events in Kochi
+Q0326,Resume Building events near Pune
+Q0327,Literature events for professionals
+Q0328,Outdoor Adventure Panel Discussions in Jaipur
+Q0329,Data Science Career Fairs in Bengaluru
+Q0330,Machine Learning events near Kochi
+Q0331,Machine Learning events near Nashik
+Q0332,Civic Engagement Tournaments in Bhubaneswar
+Q0333,Painting events for beginners
+Q0334,Career Fair events near Coimbatore
+Q0335,Photography events for professionals
+Q0336,AI workshops in Kolkata
+Q0337,Travel & Adventure events for professionals
+Q0338,Yoga events for beginners
+Q0339,Coffee events for students
+Q0340,Startups events in Mumbai
+Q0341,free events in Bengaluru
+Q0342,Baking Festivals in Chandigarh
+Q0343,Coffee Webinars in Nashik
+Q0344,free events in Hyderabad
+Q0345,Entrepreneurship events for students
+Q0346,Environmental Science events for beginners
+Q0347,Civic Awareness Competitions in Bengaluru
+Q0348,Education events in Indore
+Q0349,Technology events for professionals
+Q0350,AI workshops in Indore
+Q0351,free events in Ahmedabad
+Q0352,free events in New Delhi
+Q0353,technology events in Pune
+Q0354,technology events in Pune
+Q0355,Product Development Exhibitions in Ahmedabad
+Q0356,Community Meetup events near Kochi
+Q0357,technology events in Bhubaneswar
+Q0358,Public Services Workshops in Indore
+Q0359,Physics Panel Discussions in Pune
+Q0360,Community Meetup events near Chennai
+Q0361,Game Development events for students
+Q0362,technology events in Nagpur
+Q0363,AI workshops in Bhubaneswar
+Q0364,Community events in Bhopal
+Q0365,Academic Research events for beginners
+Q0366,Travel & Adventure events for professionals
+Q0367,Government & Civic events for professionals
+Q0368,Board Games events for students
+Q0369,Entrepreneurship workshops in Coimbatore
+Q0370,Digital Marketing workshops in Bhopal
+Q0371,Sports events in Bengaluru
+Q0372,Football workshops in Mumbai
+Q0373,Marketing events for professionals
+Q0374,Travel workshops in Lucknow
+Q0375,free events in Bengaluru
+Q0376,free events in Kolkata
+Q0377,AI workshops in Kolkata
+Q0378,free events in Jaipur
+Q0379,AI workshops in Delhi
+Q0380,AI workshops in Lucknow
+Q0381,Yoga workshops in Nagpur
+Q0382,Food & Drink events in Chandigarh
+Q0383,Travel & Adventure events for professionals
+Q0384,Startups events in Jaipur
+Q0385,Game Development events for students
+Q0386,technology events in Nashik
+Q0387,Wildlife Photography workshops in Chandigarh
+Q0388,Gaming events for professionals
+Q0389,Mobile Photography events for students
+Q0390,Photography events for professionals
+Q0391,free events in Bhopal
+Q0392,Marketing events for professionals
+Q0393,AI workshops in Ahmedabad
+Q0394,Career & Jobs events in Jaipur
+Q0395,Game Design workshops in Kochi
+Q0396,Board Games Competitions in Pune
+Q0397,Outdoor Adventure events for students
+Q0398,Street Photography events for beginners
+Q0399,technology events in New Delhi
+Q0400,technology events in Nagpur
+Q0401,Regional Cuisine events for students
+Q0402,Yoga workshops in Bhubaneswar
+Q0403,Conservation events near Kochi
+Q0404,Music events for professionals
+Q0405,Mobile Photography Talks in Ahmedabad
+Q0406,Education events in New Delhi
+Q0407,Machine Learning Festivals in Lucknow
+Q0408,Professional Development Festivals in Kolkata
+Q0409,Live Music events for beginners
+Q0410,technology events in Kolkata
+Q0411,Literature events for professionals
+Q0412,Business Strategy events for students
+Q0413,Public Services events for students
+Q0414,Literature events for professionals
+Q0415,Renewable Energy events for beginners
+Q0416,Study Skills events for beginners
+Q0417,free events in New Delhi
+Q0418,free events in Bhopal
+Q0419,AI workshops in Kochi
+Q0420,Esports Competitions in Coimbatore
+Q0421,free events in Hyderabad
+Q0422,AI workshops in Nashik
+Q0423,Street Photography events for students
+Q0424,Music events in Nashik
+Q0425,Technology events in Chandigarh
+Q0426,free events in Nashik
+Q0427,Leadership Talks in Bengaluru
+Q0428,Community Meetup Competitions in Surat
+Q0429,technology events in Bhopal
+Q0430,Sports events in Mumbai
+Q0431,Marketing events for professionals
+Q0432,Management Exhibitions in Jaipur
+Q0433,Leadership events for students
+Q0434,AI workshops in Mumbai
+Q0435,Gaming events for professionals
+Q0436,Chemistry events for beginners
+Q0437,Technology events for professionals
+Q0438,AI workshops in Nashik
+Q0439,Civic Awareness events for beginners
+Q0440,Community events in Delhi
+Q0441,Community events in Chandigarh
+Q0442,technology events in Hyderabad
+Q0443,Street Photography events for beginners
+Q0444,Community events in Pune
+Q0445,Camping events for beginners
+Q0446,Government & Civic events in Indore
+Q0447,Music events for professionals
+Q0448,Cricket events near Nashik
+Q0449,Fitness events for beginners
+Q0450,Venture Funding events for students
+Q0451,technology events in Ahmedabad
+Q0452,technology events in Lucknow
+Q0453,Marketing events for professionals
+Q0454,Music events in Pune
+Q0455,Poetry events for students
+Q0456,AI workshops in Mumbai
+Q0457,Painting Seminars in Coimbatore
+Q0458,AI workshops in Bengaluru
+Q0459,technology events in Chandigarh
+Q0460,Youth Programs events near Kochi
+Q0461,Advertising workshops in Lucknow
+Q0462,Cultural Festival Conferences in Chennai
+Q0463,Cultural Festival workshops in Pune
+Q0464,Literary Festival events for beginners
+Q0465,free events in Chandigarh
+Q0466,free events in Chandigarh
+Q0467,Dance workshops in Kolkata
+Q0468,Nutrition events for beginners
+Q0469,free events in Pune
+Q0470,Management events for beginners
+Q0471,Social Media events for beginners
+Q0472,technology events in Chandigarh
+Q0473,Game Design workshops in Coimbatore
+Q0474,Environment events for professionals
+Q0475,Sports events in Delhi
+Q0476,free events in Jaipur
+Q0477,Personal Finance Conferences in Bhubaneswar
+Q0478,Brand Strategy Networking Events in Hyderabad
+Q0479,Board Games Seminars in Bhubaneswar
+Q0480,Nutrition events for students
+Q0481,Web Development events for beginners
+Q0482,Travel & Adventure events in Nagpur
+Q0483,Theatre workshops in Kochi
+Q0484,Study Skills events for beginners
+Q0485,Finance events for professionals
+Q0486,Indie Music events for students
+Q0487,Coffee events for beginners
+Q0488,Board Games workshops in Bengaluru
+Q0489,AI workshops in Ahmedabad
+Q0490,technology events in Kolkata
+Q0491,Running events near Kolkata
+Q0492,technology events in Kolkata
+Q0493,Renewable Energy workshops in Delhi
+Q0494,Classical Music Concerts in Pune
+Q0495,Trekking workshops in Kochi
+Q0496,Machine Learning workshops in Indore
+Q0497,technology events in Lucknow
+Q0498,Financial Planning Competitions in Surat
+Q0499,Finance events in Kochi
+Q0500,Literary Festival events near Bhopal

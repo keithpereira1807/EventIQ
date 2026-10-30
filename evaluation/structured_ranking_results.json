@@ -1,0 +1,39 @@
+{
+  "model": "Structured Event Ranking (Hybrid + Structured Intent Layer)",
+  "base_model": "Hybrid (alpha=0.70)",
+  "lambda_weight": 0.15,
+  "signal_weights": {
+    "city": 0.3,
+    "category": 0.25,
+    "is_free": 0.2,
+    "event_type": 0.15,
+    "audience": 0.1
+  },
+  "queries_evaluated": 500,
+  "evaluation_duration_seconds": 7.35,
+  "metrics": {
+    "precision_at_5": 0.3832,
+    "precision_at_10": 0.3364,
+    "recall_at_10": 0.2243,
+    "f1": 0.2691,
+    "mrr": 0.4991,
+    "ndcg_at_10": 0.3731
+  },
+  "hybrid_baseline": {
+    "alpha": 0.7,
+    "precision_at_5": 0.3808,
+    "precision_at_10": 0.3402,
+    "recall_at_10": 0.2268,
+    "f1": 0.2722,
+    "mrr": 0.4915,
+    "ndcg_at_10": 0.3689
+  },
+  "deltas_vs_hybrid": {
+    "precision_at_5": 0.0024,
+    "precision_at_10": -0.0038,
+    "recall_at_10": -0.0025,
+    "f1": -0.0031,
+    "mrr": 0.0076,
+    "ndcg_at_10": 0.0042
+  }
+}

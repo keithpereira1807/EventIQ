@@ -1,0 +1,14 @@
+{
+  "model": "Semantic (all-MiniLM-L6-v2)",
+  "model_name": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "total_documents": 10000,
+  "queries_evaluated": 500,
+  "evaluation_duration_seconds": 0.83,
+  "precision_at_5": 0.2248,
+  "precision_at_10": 0.1788,
+  "recall_at_10": 0.1192,
+  "f1": 0.143,
+  "mrr": 0.3729,
+  "ndcg_at_10": 0.1955
+}

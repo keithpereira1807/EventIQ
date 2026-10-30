@@ -1,0 +1,11 @@
+{
+  "model": "TF-IDF",
+  "queries_evaluated": 500,
+  "precision_at_5": 0.3552,
+  "precision_at_10": 0.2628,
+  "recall_at_10": 0.1752,
+  "f1": 0.2102,
+  "mrr": 0.4820,
+  "ndcg_at_10": 0.3101
+}
+
