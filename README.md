@@ -2,6 +2,8 @@
 
 EventIQ is an Information Retrieval (IR) and Ranking System designed to retrieve and rank events from natural-language queries. The system evaluates and compares multiple Information Retrieval paradigms—from classical lexical matchers to dense neural vector search, score-level hybrid fusion, and explainable query-aware structured ranking.
 
+#Live Demo: https://eventiq-exe.streamlit.app/
+
 ---
 
 ## 1. Project Objective
