@@ -5,7 +5,8 @@ from typing import Any, Dict, List
 from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "../..")
@@ -189,3 +190,24 @@ def get_evaluation():
     """
     service = SearchService.get_instance()
     return service.get_evaluation()
+
+
+# Mount frontend static distribution when available for unified single-service hosting
+FRONTEND_DIST = os.path.join(PROJECT_ROOT, "frontend", "dist")
+if os.path.exists(FRONTEND_DIST):
+    assets_path = os.path.join(FRONTEND_DIST, "assets")
+    if os.path.exists(assets_path):
+        app.mount("/assets", StaticFiles(directory=assets_path), name="static_assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_spa(full_path: str):
+        # Do not intercept API routes
+        if full_path.startswith("api"):
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="API endpoint not found")
+        target = os.path.join(FRONTEND_DIST, full_path)
+        if full_path and os.path.isfile(target):
+            return FileResponse(target)
+        index_file = os.path.join(FRONTEND_DIST, "index.html")
+        if os.path.isfile(index_file):
+            return FileResponse(index_file)
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Page not found")
