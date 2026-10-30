@@ -1,5 +1,6 @@
 import os
 import sys
+from contextlib import asynccontextmanager
 from typing import Any, Dict, List
 
 from fastapi import FastAPI, HTTPException, Request, status
@@ -25,10 +26,23 @@ from backend.app.schemas import (
 )
 from backend.app.services.search_service import SearchService
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("Pre-warming SearchService and IR models into memory...")
+    try:
+        SearchService.get_instance()
+        print("SearchService pre-loaded successfully!")
+    except Exception as e:
+        print(f"Warning during model warmup: {e}")
+    yield
+
+
 app = FastAPI(
     title="EventIQ API",
     description="Intelligent Event Retrieval and Ranking System API",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan
 )
 
 # Enable CORS for local development and future React frontend

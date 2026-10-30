@@ -33,12 +33,12 @@ class SearchService:
     def __init__(self):
         print("Initializing SearchService and pre-loading retrieval models...")
         self.df = pd.read_csv(DATA_PATH)
+        self.df.set_index("event_id", drop=False, inplace=True)
         from backend.retrieval.preprocessing import build_searchable_document
         self.df["searchable_text"] = self.df.apply(
             build_searchable_document,
             axis=1
         )
-        self.df_by_id = self.df.set_index("event_id").to_dict(orient="index")
 
         print("Loading TF-IDF model...")
         self.tfidf_retriever = TFIDFRetriever(df=self.df)
@@ -80,7 +80,7 @@ class SearchService:
             formatted = []
             for item in structured_results:
                 e_id = item["event_id"]
-                full_event = self.df_by_id.get(e_id, {})
+                full_event = self.df.loc[e_id].to_dict() if e_id in self.df.index else {}
 
                 formatted.append({
                     "rank": item["rank"],
@@ -130,7 +130,7 @@ class SearchService:
         formatted = []
         for rank_idx, (index, row) in enumerate(df_res.iterrows(), start=1):
             e_id = row["event_id"]
-            full_event = self.df_by_id.get(e_id, {})
+            full_event = self.df.loc[e_id].to_dict() if e_id in self.df.index else {}
             score_val = round(float(row["score"]), 4)
 
             formatted.append({
@@ -215,8 +215,8 @@ class SearchService:
             print(f"PostgreSQL fetch failed for {event_id}: {e}")
 
         # Fallback to in-memory DataFrame
-        if event_id in self.df_by_id:
-            raw = self.df_by_id[event_id].copy()
+        if event_id in self.df.index:
+            raw = self.df.loc[event_id].to_dict()
             raw["event_id"] = event_id
             for date_col in ["start_date", "start_time", "end_date", "end_time"]:
                 if date_col in raw and pd.notnull(raw[date_col]):
