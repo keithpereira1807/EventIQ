@@ -26,6 +26,9 @@ WORKDIR /app
 COPY backend/requirements.txt ./backend/requirements.txt
 RUN pip install --no-cache-dir -r backend/requirements.txt
 
+# Pre-download sentence-transformers model during build time
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
+
 # Copy backend code, dataset, evaluations, and docs
 COPY backend/ ./backend
 COPY data/ ./data
@@ -40,3 +43,4 @@ EXPOSE 8000
 
 # Start server using dynamic $PORT (defaulting to 8000)
 CMD ["sh", "-c", "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+

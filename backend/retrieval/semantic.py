@@ -3,8 +3,12 @@ import sys
 
 import numpy as np
 import pandas as pd
+import torch
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+
+# Limit PyTorch threads to reduce container RAM usage
+torch.set_num_threads(1)
 
 PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "../..")
@@ -26,17 +30,22 @@ class SemanticRetriever:
     and cosine similarity over dense vector embeddings.
     """
 
-    def __init__(self, data_path=None, embeddings_path=None, model_name=MODEL_NAME):
+    def __init__(self, data_path=None, embeddings_path=None, model_name=MODEL_NAME, df=None):
         self.data_path = data_path or DATA_PATH
         self.embeddings_path = embeddings_path or EMBEDDINGS_PATH
         self.model_name = model_name
 
-        print("Loading EventIQ dataset for Semantic Retrieval...")
-        self.df = pd.read_csv(self.data_path)
-        self.df["searchable_text"] = self.df.apply(
-            build_searchable_document,
-            axis=1
-        )
+        if df is not None:
+            self.df = df
+        else:
+            print("Loading EventIQ dataset for Semantic Retrieval...")
+            self.df = pd.read_csv(self.data_path)
+
+        if "searchable_text" not in self.df.columns:
+            self.df["searchable_text"] = self.df.apply(
+                build_searchable_document,
+                axis=1
+            )
         print(f"Loaded {len(self.df)} events.")
 
         print(f"Loading sentence-transformer model: {self.model_name}...")

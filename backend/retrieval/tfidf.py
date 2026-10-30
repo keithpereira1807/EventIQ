@@ -23,15 +23,19 @@ DATA_PATH = os.path.join(
 
 class TFIDFRetriever:
 
-    def __init__(self):
-        print("Loading EventIQ dataset...")
+    def __init__(self, data_path=None, df=None):
+        if df is not None:
+            self.df = df
+        else:
+            path = data_path or DATA_PATH
+            print("Loading EventIQ dataset...")
+            self.df = pd.read_csv(path)
 
-        self.df = pd.read_csv(DATA_PATH)
-
-        self.df["searchable_text"] = self.df.apply(
-            build_searchable_document,
-            axis=1
-        )
+        if "searchable_text" not in self.df.columns:
+            self.df["searchable_text"] = self.df.apply(
+                build_searchable_document,
+                axis=1
+            )
 
         print(f"Loaded {len(self.df)} events.")
 

@@ -34,16 +34,19 @@ class BM25Retriever:
     BM25 lexical retrieval model using rank-bm25 (BM25Okapi).
     """
 
-    def __init__(self, data_path=None):
-        path = data_path or DATA_PATH
-        print("Loading EventIQ dataset for BM25...")
+    def __init__(self, data_path=None, df=None):
+        if df is not None:
+            self.df = df
+        else:
+            path = data_path or DATA_PATH
+            print("Loading EventIQ dataset for BM25...")
+            self.df = pd.read_csv(path)
 
-        self.df = pd.read_csv(path)
-
-        self.df["searchable_text"] = self.df.apply(
-            build_searchable_document,
-            axis=1
-        )
+        if "searchable_text" not in self.df.columns:
+            self.df["searchable_text"] = self.df.apply(
+                build_searchable_document,
+                axis=1
+            )
 
         print(f"Loaded {len(self.df)} events.")
 

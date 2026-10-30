@@ -33,16 +33,21 @@ class SearchService:
     def __init__(self):
         print("Initializing SearchService and pre-loading retrieval models...")
         self.df = pd.read_csv(DATA_PATH)
+        from backend.retrieval.preprocessing import build_searchable_document
+        self.df["searchable_text"] = self.df.apply(
+            build_searchable_document,
+            axis=1
+        )
         self.df_by_id = self.df.set_index("event_id").to_dict(orient="index")
 
         print("Loading TF-IDF model...")
-        self.tfidf_retriever = TFIDFRetriever()
+        self.tfidf_retriever = TFIDFRetriever(df=self.df)
 
         print("Loading BM25 model...")
-        self.bm25_retriever = BM25Retriever()
+        self.bm25_retriever = BM25Retriever(df=self.df)
 
         print("Loading Semantic model...")
-        self.semantic_retriever = SemanticRetriever()
+        self.semantic_retriever = SemanticRetriever(df=self.df)
 
         print("Loading Hybrid model (alpha=0.70)...")
         self.hybrid_retriever = HybridRetriever(
